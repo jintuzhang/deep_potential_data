@@ -1,0 +1,49 @@
+{
+    "model": {
+        "type_map":           ["C", "H"],
+        "descriptor": {
+            "type":           "se_e2_a",
+            "sel":            [20, 20],
+            "rcut_smth":       1.00,
+            "rcut":            20.00,
+            "neuron":         [35, 70, 140],
+            "resnet_dt":       false,
+            "axis_neuron":     16,
+            "seed":            1
+        },
+        "fitting_net": {
+            "neuron":         [240, 240, 240],
+            "resnet_dt":       true,
+            "seed":            1
+        }
+    },
+
+    "learning_rate": {
+        "type":               "exp",
+        "decay_steps":         5000,
+        "start_lr":            0.001,
+        "stop_lr":             1e-11
+    },
+
+    "loss": {
+        "type":               "ener",
+        "start_pref_e":        0.02,
+        "limit_pref_e":        1,
+        "start_pref_f":        1000,
+        "limit_pref_f":        1,
+        "start_pref_v":        0,
+        "limit_pref_v":        0
+    },
+
+    "training": {
+        "training_data": {
+            "systems":        "./train_set",
+            "batch_size" :     10
+        },
+        "numb_steps":          5000000,
+        "seed":                674662784,
+        "disp_file":          "lcurve.out",
+        "disp_freq":           100,
+        "save_freq":           10000
+    }
+}
