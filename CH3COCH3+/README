@@ -1,8 +1,0 @@
-A W.I.P potential for the dissociation process of an acetone radical cation
-
-                      CH3COCH3+· --> CH3CO+ + CH3·,
-
-as detailed in J. Phys. Chem. A 2008, 112, 13121–13127. This potential was
-trained under the UMP2/6-31G* level, and will lead to a active/spectator methyl
-dissociation ratio of 1.60 (with a initial total mode energy of 10 kcal/mol
-above the ZPE of the TS structure).
